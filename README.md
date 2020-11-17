@@ -1,8 +1,8 @@
-# HSH - Simple Shell
+# Simple Shell
 
 ## Description
 This team project is part of the first year curriculum of ALX-Holberton School.
-HSH is a simple UNIX command interpreter.
+This is a simple command interpreter.
 
 ## Authors
 * **Peter C. Okorafor**
@@ -10,7 +10,7 @@ HSH is a simple UNIX command interpreter.
 
 ## Files
 ### man_1_simple_shell
-Man page for the HSH simple shell.
+Man page for the simple shell.
 More to be updated...
 
 ### shell.h
