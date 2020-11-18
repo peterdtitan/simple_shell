@@ -1,0 +1,61 @@
+.TH man 1 "November 2020" "Simple Shell"
+.SH NAME
+ bsh \- UnixShell command interpreter (shell)
+.SH SYNOPSIS
+B ./bsh
+\fb\ \fI[command]\fR [arguments ...]
+	.SH DESCRIPTION
+The \fB\ bsh \fR (Simple Shell) is a simple UNIX command line interpreter (Holberton School Project 0x15-Simple_Shell)
+
+.SH Overview
+It is a command language interpreter that execute commands read from input devices such as keyboards or from files.
+The shell gets started when the user logs in or start the terminal.
+.B Simple Shell
+it can be used in both non-interactive and interactive mode.
+The user input line is vectorized, each token is separated by spaces.\
+The first argument at argv[0] is understood by the shell to be a command.\
+The shell will first match the command token against a list of built-in programs,\
+then the program will check the $PATH and run that command if it can be found.\
+Remaining tokens are argument tokens and are treated as modifiers or options.
+
+.SH Built-ins
+UnixShell has implemented the following built-ins:
+.TP
+.B -cd
+changes current directory of the process. syntax:
+.B cd [DIRECTORY]
+.TP
+
+.B -exit
+to exit from the shell
+.B exit
+and press
+.B ENTER.
+
+.TP
+.B -env
+Prints the current enviornment you are in
+
+.SH USAGE / COMPILATION
+All files are to be compiled using "gcc -Wall -Werror -Wextra -pedantic *. -o hsh"
+
+.I bsh.c
+- Simple Shell
+
+.I path.c
+- Finds the string in **env that contains the path
+
+.I shell.h
+- Contains all prototypes for base functions, built-ins, and global variables
+
+.SH Executable
+.I bsh
+
+.SH SEE ALSO
+.I sh(1)
+
+.SH BUGS
+
+Report bugs to https://github.com/peterdtitan and https://github.com/thormiwa
+.SH AUTHORS
+Peter Okorafor,Okafor Tomiwa
